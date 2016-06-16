@@ -48,4 +48,4 @@ View(tt)
 
 # find significant figures
 
- 
+tt$adj.P.Val<=0.05
