@@ -19,7 +19,6 @@ myTargets[1:10,]
 # e and myExprs are the same matrix, show each gene and the expression by sample
 
 dim(myTargets)
-dim(myExprs)
 
 # now to make and label the design matrix
 
@@ -49,3 +48,8 @@ View(tt)
 # find significant figures
 
 tt$adj.P.Val<=0.05
+
+# assign and look at outcomes of each hypothesis test
+
+results <- decideTests(fit2)
+vennDiagram(results)
