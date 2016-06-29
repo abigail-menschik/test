@@ -6,7 +6,7 @@ gse <- getGEO("GSE16476")
 eset <- GSE[[1]]
 e <- exprs(eset)
 
-# other work
+# work
 
 exprs(gse[1])
 gse[[1]]
